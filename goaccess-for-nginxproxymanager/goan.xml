@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>GoAccess-For-Nginx-Proxy-Manager-Logs</Name>
+  <Repository>xavierh/goaccess-for-nginxproxymanager</Repository>
+  <Registry>https://hub.docker.com/r/xavierh/goaccess-for-nginxproxymanager</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/120935-support-xavierh-goaccess-for-nginxproxymanager/</Support>
+  <Project>https://github.com/xavier-hernandez/goaccess-for-nginxproxymanager</Project>
+  <Overview>GoAccess for Nginx Proxy Manager Logs&#xD;
+&#xD;
+This docker container should work out of the box with Nginx Proxy Manager to parse proxy logs. The goaccess.conf has been configured to only access proxy logs and archived proxy logs.&#xD;
+&#xD;
+The docker image scans and includes files matching the following criteria: proxy-host-_access.log.gz proxy-host-_access.log&#xD;
+&#xD;
+Currently using GoAccess version: 1.5.5&#xD;
+&#xD;
+Add a Path:&#xD;
+Name: doesn't matter&#xD;
+Container Path: /opt/log&#xD;
+Host Path: /mnt/user/***&#xD;
+Access Mode can be read only&#xD;
+</Overview>
+  <Category>Tools: Network:Proxy Status:Stable</Category>
+  <WebUI>http://[IP]:[PORT:7880]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/xavier-hernandez/unraid-templates/master/resources/goaccess-npm.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1646868571</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>GoAccess for Nginx Proxy Manager Logs&#xD;
+&#xD;
+This docker container should work out of the box with Nginx Proxy Manager to parse proxy logs. The goaccess.conf has been configured to only access proxy logs and archived proxy logs.&#xD;
+&#xD;
+The docker image scans and includes files matching the following criteria: proxy-host-_access.log.gz proxy-host-_access.log&#xD;
+&#xD;
+Currently using GoAccess version: 1.5.5&#xD;
+&#xD;
+Add a Path:&#xD;
+Name: doesn't matter&#xD;
+Container Path: /opt/log&#xD;
+Host Path: /mnt/user/***&#xD;
+Access Mode can be read only&#xD;
+</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>7880</HostPort>
+        <ContainerPort>7880</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data/>
+  <Environment>
+    <Variable>
+      <Value>America/Chicago</Value>
+      <Name>TZ</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="Host Port 1" Target="7880" Default="" Mode="tcp" Description="Container Port: 7880" Type="Port" Display="always" Required="false" Mask="false">7880</Config>
+  <Config Name="Host Key 1" Target="TZ" Default="" Mode="" Description="Container Variable: TZ" Type="Variable" Display="always" Required="false" Mask="false">America/Chicago</Config>
+</Container>
