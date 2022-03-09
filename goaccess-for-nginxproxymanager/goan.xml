@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>GoAccess-For-Nginx-Proxy-Manager-Logs</Name>
+  <Name>GoAccess-NPM-Logs</Name>
   <Repository>xavierh/goaccess-for-nginxproxymanager</Repository>
   <Registry>https://hub.docker.com/r/xavierh/goaccess-for-nginxproxymanager</Registry>
   <Network>bridge</Network>
@@ -24,7 +24,7 @@ Currently using GoAccess version: 1.5.5&#xD;
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1646869079</DateInstalled>
+  <DateInstalled>1646869409</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>GoAccess for Nginx Proxy Manager Logs&#xD;
