@@ -16,12 +16,6 @@ This docker container should work out of the box with Nginx Proxy Manager to par
 The docker image scans and includes files matching the following criteria: proxy-host-_access.log.gz proxy-host-_access.log&#xD;
 &#xD;
 Currently using GoAccess version: 1.5.5&#xD;
-&#xD;
-Add a Path:&#xD;
-Name: doesn't matter&#xD;
-Container Path: /opt/log&#xD;
-Host Path: /mnt/user/***&#xD;
-Access Mode can be read only&#xD;
 </Overview>
   <Category>Tools: Network:Proxy Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:7880]</WebUI>
@@ -30,7 +24,7 @@ Access Mode can be read only&#xD;
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1646868571</DateInstalled>
+  <DateInstalled>1646869079</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>GoAccess for Nginx Proxy Manager Logs&#xD;
@@ -40,12 +34,6 @@ This docker container should work out of the box with Nginx Proxy Manager to par
 The docker image scans and includes files matching the following criteria: proxy-host-_access.log.gz proxy-host-_access.log&#xD;
 &#xD;
 Currently using GoAccess version: 1.5.5&#xD;
-&#xD;
-Add a Path:&#xD;
-Name: doesn't matter&#xD;
-Container Path: /opt/log&#xD;
-Host Path: /mnt/user/***&#xD;
-Access Mode can be read only&#xD;
 </Description>
   <Networking>
     <Mode>bridge</Mode>
@@ -57,7 +45,13 @@ Access Mode can be read only&#xD;
       </Port>
     </Publish>
   </Networking>
-  <Data/>
+  <Data>
+    <Volume>
+      <HostDir/>
+      <ContainerDir>/opt/log</ContainerDir>
+      <Mode>ro</Mode>
+    </Volume>
+  </Data>
   <Environment>
     <Variable>
       <Value>America/Chicago</Value>
@@ -68,4 +62,5 @@ Access Mode can be read only&#xD;
   <Labels/>
   <Config Name="Host Port 1" Target="7880" Default="" Mode="tcp" Description="Container Port: 7880" Type="Port" Display="always" Required="false" Mask="false">7880</Config>
   <Config Name="Host Key 1" Target="TZ" Default="" Mode="" Description="Container Variable: TZ" Type="Variable" Display="always" Required="false" Mask="false">America/Chicago</Config>
+  <Config Name="Host Path 1" Target="/opt/log" Default="" Mode="ro" Description="Container Path: /opt/log" Type="Path" Display="always" Required="false" Mask="false"/>
 </Container>
