@@ -24,7 +24,7 @@ GeoLite2-City.mmdb (2022-05-27)</Overview>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1654612433</DateInstalled>
+  <DateInstalled>1654642020</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>GoAccess for Nginx Proxy Manager Logs&#xD;
@@ -93,10 +93,10 @@ GeoLite2-City.mmdb (2022-05-27)</Description>
   <Config Name="Host Port 1" Target="7880" Default="" Mode="tcp" Description="Container Port: 7880" Type="Port" Display="always" Required="false" Mask="false">7880</Config>
   <Config Name="Host Key 1" Target="TZ" Default="" Mode="" Description="Container Variable: TZ" Type="Variable" Display="always" Required="false" Mask="false">America/Chicago</Config>
   <Config Name="Host Path 1" Target="/opt/log" Default="" Mode="ro" Description="Container Path: /opt/log" Type="Path" Display="always" Required="false" Mask="false"/>
-  <Config Name="SKIP_ARCHIVED_LOGS" Target="SKIP_ARCHIVED_LOGS" Default="False" Mode="" Description="Container Variable: SKIP_ARCHIVED_LOGS" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="DEBUG" Target="DEBUG" Default="False" Mode="" Description="Container Variable: DEBUG" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="BASIC_AUTH" Target="BASIC_AUTH" Default="False" Mode="" Description="Container Variable: BASIC_AUTH" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="BASIC_AUTH_USERNAME" Target="BASIC_AUTH_USERNAME" Default="False" Mode="" Description="Container Variable: BASIC_AUTH_USERNAME" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="BASIC_AUTH_PASSWORD" Target="BASIC_AUTH_PASSWORD" Default="False" Mode="" Description="Container Variable: BASIC_AUTH_PASSWORD" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="EXCLUDE_IPS" Target="EXCLUDE_IPS" Default="" Mode="" Description="Container Variable: EXCLUDE_IPS" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="SKIP_ARCHIVED_LOGS" Target="SKIP_ARCHIVED_LOGS" Default="False" Mode="" Description="(Optional) Defaults to False. Set to True to skip archived logs, i.e. proxy-host*.gz" Type="Variable" Display="always" Required="false" Mask="false">False</Config>
+  <Config Name="DEBUG" Target="DEBUG" Default="False" Mode="" Description="(Optional) HTML version of the running goaccess.conf wihtin the container" Type="Variable" Display="always" Required="false" Mask="false">False</Config>
+  <Config Name="BASIC_AUTH" Target="BASIC_AUTH" Default="False" Mode="" Description="(Optional) Defaults to False. Set to True to enable nginx basic authentication. Docker container needs to stopped or restarted each time this flag is modified. This allows for the .htpasswd file to be changed accordingly." Type="Variable" Display="always" Required="false" Mask="false">True</Config>
+  <Config Name="BASIC_AUTH_USERNAME" Target="BASIC_AUTH_USERNAME" Default="False" Mode="" Description="Optional) Requires BASIC_AUTH to bet set to True. Username for basic authentication." Type="Variable" Display="always" Required="false" Mask="false">x</Config>
+  <Config Name="BASIC_AUTH_PASSWORD" Target="BASIC_AUTH_PASSWORD" Default="False" Mode="" Description="(Optional) Requires BASIC_AUTH to bet set to True. Password for basic authentication." Type="Variable" Display="always" Required="false" Mask="false">x</Config>
+  <Config Name="EXCLUDE_IPS" Target="EXCLUDE_IPS" Default="" Mode="" Description="(Optional) IP Addresses or range of IPs delimited by comma refer to https://goaccess.io/man. For example: 192.168.0.1-192.168.0.100 or 127.0.0.1,192.168.0.1-192.168.0.100" Type="Variable" Display="always" Required="false" Mask="false"/>
 </Container>
