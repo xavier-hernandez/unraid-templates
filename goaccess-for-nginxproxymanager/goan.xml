@@ -24,7 +24,7 @@ GeoLite2-City.mmdb (2022-05-27)</Overview>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1654611724</DateInstalled>
+  <DateInstalled>1654612433</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Description>GoAccess for Nginx Proxy Manager Logs&#xD;
@@ -58,9 +58,45 @@ GeoLite2-City.mmdb (2022-05-27)</Description>
       <Name>TZ</Name>
       <Mode/>
     </Variable>
+    <Variable>
+      <Value/>
+      <Name>SKIP_ARCHIVED_LOGS</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>DEBUG</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>BASIC_AUTH</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>BASIC_AUTH_USERNAME</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>BASIC_AUTH_PASSWORD</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>EXCLUDE_IPS</Name>
+      <Mode/>
+    </Variable>
   </Environment>
   <Labels/>
   <Config Name="Host Port 1" Target="7880" Default="" Mode="tcp" Description="Container Port: 7880" Type="Port" Display="always" Required="false" Mask="false">7880</Config>
   <Config Name="Host Key 1" Target="TZ" Default="" Mode="" Description="Container Variable: TZ" Type="Variable" Display="always" Required="false" Mask="false">America/Chicago</Config>
   <Config Name="Host Path 1" Target="/opt/log" Default="" Mode="ro" Description="Container Path: /opt/log" Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="SKIP_ARCHIVED_LOGS" Target="SKIP_ARCHIVED_LOGS" Default="False" Mode="" Description="Container Variable: SKIP_ARCHIVED_LOGS" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="DEBUG" Target="DEBUG" Default="False" Mode="" Description="Container Variable: DEBUG" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="BASIC_AUTH" Target="BASIC_AUTH" Default="False" Mode="" Description="Container Variable: BASIC_AUTH" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="BASIC_AUTH_USERNAME" Target="BASIC_AUTH_USERNAME" Default="False" Mode="" Description="Container Variable: BASIC_AUTH_USERNAME" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="BASIC_AUTH_PASSWORD" Target="BASIC_AUTH_PASSWORD" Default="False" Mode="" Description="Container Variable: BASIC_AUTH_PASSWORD" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="EXCLUDE_IPS" Target="EXCLUDE_IPS" Default="" Mode="" Description="Container Variable: EXCLUDE_IPS" Type="Variable" Display="always" Required="false" Mask="false"/>
 </Container>
