@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>external-ip</Name>
+  <Repository>xavierh/external-ip</Repository>
+  <Registry>https://hub.docker.com/repository/docker/xavierh/external-ip</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/125786-support-xavierh-external-ip/</Support>
+  <Project>https://github.com/xavier-hernandez/docker-external-ip</Project>
+  <Overview>Gets external IP via DIG command ( OpenDNS , Cloudflare, google ) on a scheduled basis that can be customized. Also includes the ability to alert you via pushover if the IP changes.</Overview>
+  <Category>Network:Management Network:Other</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/xavier-hernandez/unraid-templates/master/resources/external-ip.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1657230347</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Gets external IP via DIG command ( OpenDNS , Cloudflare, google ) on a scheduled basis that can be customized. Also includes the ability to alert you via pushover if the IP changes.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Data/>
+  <Environment>
+    <Variable>
+      <Value>America/Chicago</Value>
+      <Name>TZ</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>5m</Value>
+      <Name>DELAY</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>NOTIFICATION_TYPE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>PUSHOVER_TOKEN</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>PROVIDER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>PUSHOVER_USER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>PUSHOVER_TITLE</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value/>
+      <Name>RECOVERY_ALERT</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="TZ" Target="TZ" Default="America/Chicago" Mode="" Description="Container Variable: TZ" Type="Variable" Display="always" Required="false" Mask="false">America/Chicago</Config>
+  <Config Name="DELAY" Target="DELAY" Default="5m" Mode="" Description="Container Variable: DELAY" Type="Variable" Display="always" Required="false" Mask="false">5m</Config>
+  <Config Name="PROVIDER" Target="PROVIDER" Default="" Mode="" Description="Container Variable: PROVIDER" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="NOTIFICATION_TYPE" Target="NOTIFICATION_TYPE" Default="" Mode="" Description="Container Variable: NOTIFICATION_TYPE" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="PUSHOVER_TOKEN" Target="PUSHOVER_TOKEN" Default="" Mode="" Description="Container Variable: PUSHOVER_TOKEN" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="PUSHOVER_USER" Target="PUSHOVER_USER" Default="" Mode="" Description="Container Variable: PUSHOVER_USER" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="PUSHOVER_TITLE" Target="PUSHOVER_TITLE" Default="" Mode="" Description="Container Variable: PUSHOVER_TITLE" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="RECOVERY_ALERT" Target="RECOVERY_ALERT" Default="" Mode="" Description="Container Variable: RECOVERY_ALERT" Type="Variable" Display="always" Required="false" Mask="false"/>
+</Container>
