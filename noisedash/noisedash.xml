@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>noisedash</Name>
+  <Repository>noisedash/noisedash:latest</Repository>
+  <Registry>https://hub.docker.com/r/noisedash/noisedash</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/133448-support-xavierh-noisedash/</Support>
+  <Project>https://github.com/kaythomas0/noisedash</Project>
+  <Overview>Self-hostable web tool for generating ambient noises.&#xD;
+&#xD;
+README:&#xD;
+&#xD;
+Run this container first then stop it, it'll error for missing config. Copy this file https://raw.githubusercontent.com/kaythomas0/noisedash/main/config/default.json into your NoiseConfig path. Then restart the container.</Overview>
+  <Category>MediaApp:Music</Category>
+  <WebUI>http://[IP]:[PORT:1432]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/xavier-hernandez/unraid-templates/master/resources/noise.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1673209407</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Host Port" Target="1432" Default="1432" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">1432</Config>
+  <Config Name="NoiseDB" Target="/var/noisedash/db" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/noise</Config>
+  <Config Name="NoiseSamples" Target="/var/noisedash/samples" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="NoiseConfig" Target="/var/noisedash/config" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"/>
+</Container>
