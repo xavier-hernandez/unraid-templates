@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>actual-server</Name>
+  <Repository>jlongster/actual-server:latest</Repository>
+  <Registry>https://hub.docker.com/r/jlongster/actual-server</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/133947-support-xavierh-actual-server/</Support>
+  <Project>https://github.com/actualbudget/actual</Project>
+  <Overview>Actual is a super fast privacy-focused app for managing your finances. You own your data, and we will sync it across all devices with optional end-to-end encryption.&#xD;
+&#xD;
+This container uses the following image: jlongster/actual-server:latest</Overview>
+  <Category>Productivity:</Category>
+  <WebUI>http://[IP]:[PORT:5006]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/xavier-hernandez/unraid-templates/master/resources/budget.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1674184387</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Host Port" Target="5006" Default="5006" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">5006</Config>
+  <Config Name="Data" Target="/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"/>
+</Container>
