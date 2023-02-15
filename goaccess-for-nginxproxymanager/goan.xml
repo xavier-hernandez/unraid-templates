@@ -13,10 +13,7 @@
 &#xD;
 This docker container should work out of the box with Nginx Proxy Manager to parse proxy logs. The goaccess.conf has been configured to only access proxy logs and archived proxy logs.&#xD;
 &#xD;
-The docker image scans and includes files matching the following criteria: proxy-host-_access.log.gz proxy-host-_access.log&#xD;
-&#xD;
-Currently using GoAccess version: 1.9&#xD;
-GeoLite2-City.mmdb (2022-12-30)</Overview>
+Go to https://github.com/xavier-hernandez/goaccess-for-nginxproxymanager for updates.</Overview>
   <Category>Tools: Network:Proxy Status:Stable</Category>
   <WebUI>http://[IP]:[PORT:7880]</WebUI>
   <TemplateURL/>
@@ -31,10 +28,7 @@ GeoLite2-City.mmdb (2022-12-30)</Overview>
 &#xD;
 This docker container should work out of the box with Nginx Proxy Manager to parse proxy logs. The goaccess.conf has been configured to only access proxy logs and archived proxy logs.&#xD;
 &#xD;
-The docker image scans and includes files matching the following criteria: proxy-host-_access.log.gz proxy-host-_access.log&#xD;
-&#xD;
-Currently using GoAccess version: 1.9&#xD;
-GeoLite2-City.mmdb (2022-12-30)</Description>
+Go to https://github.com/xavier-hernandez/goaccess-for-nginxproxymanager for updates.&#xD;</Description>
   <Networking>
     <Mode>bridge</Mode>
     <Publish>
