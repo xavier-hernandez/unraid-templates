@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>x-mariohtml5</Name>
+  <Repository>xavierh/mariohtml5</Repository>
+  <Registry>https://hub.docker.com/repository/docker/xavierh/mariohtml5</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/145206-support-xavierh-mariohtml5/</Support>
+  <Project>https://github.com/xavier-hernandez/mariohtml5/tree/my-version</Project>
+  <Overview>This is a clone of Infinite Mario, written in JavaScript for web browsers using HTML5.</Overview>
+  <Category>GameServers:</Category>
+  <WebUI>http://[IP]:[PORT:8929]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/xavier-hernandez/unraid-templates/master/resources/mario.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1694838384</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="HTTP" Target="80" Default="8929" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8929</Config>
+</Container>
