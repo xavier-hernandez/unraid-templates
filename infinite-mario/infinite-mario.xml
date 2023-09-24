@@ -11,7 +11,7 @@
   <Project>https://github.com/xavier-hernandez/mariohtml5/tree/my-version</Project>
   <Overview>This is a clone of Infinite Mario, written in JavaScript for web browsers using HTML5.</Overview>
   <Category>GameServers:</Category>
-  <WebUI>http://[IP]:[PORT:8929]</WebUI>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/xavier-hernandez/unraid-templates/master/resources/mario.png</Icon>
   <ExtraParams/>
