@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>networking-toolbox</Name>
+  <Repository>lissy93/networking-toolbox</Repository>
+  <Registry>https://github.com/Lissy93/networking-toolbox</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/196498-support-xavierh-networking-toolbox/</Support>
+  <Project/>
+  <ReadMe/>
+  <Overview>The all-in-one offline-first networking toolbox for sysadmins</Overview>
+  <Category>Network:Other</Category>
+  <WebUI>http://[IP]:[PORT:3000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/Lissy93/networking-toolbox/main/static/icon.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1767640236</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Host Port" Target="3000" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="true" Mask="false">3000</Config>
+  <TailscaleStateDir/>
+</Container>
